@@ -1,3 +1,4 @@
+import 'package:final_bone/Screens/Keystore_verified/keystore_verified.dart';
 import 'package:flutter/material.dart';
 import 'package:final_bone/Screens/Welcome/components/background.dart';
 import 'package:final_bone/Screens/components/constants.dart';
@@ -30,7 +31,10 @@ class Body extends StatelessWidget {
         SizedBox(
           width: size.width * 0.8,
           child: MaterialButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => KeyStoreVerified()));
+            },
             color: kPrimaryColor,
             child: Text(
               "GET STARTED",
