@@ -1,4 +1,5 @@
 import 'package:final_bone/Screens/components/constants.dart';
+import 'package:final_bone/Screens/signup/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,7 +33,10 @@ class KeystoreUpdate extends StatelessWidget {
               children: [
                 Flexible(
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Signup()));
+                    },
                     color: kPrimaryColor,
                     child: Text(
                       "YES",
