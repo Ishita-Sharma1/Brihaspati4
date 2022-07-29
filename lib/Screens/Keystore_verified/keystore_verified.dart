@@ -1,3 +1,4 @@
+import 'package:final_bone/Screens/Keystore_update/keystore_update.dart';
 import 'package:final_bone/Screens/components/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -227,7 +228,13 @@ class KeyStoreVerifiedState extends State<KeyStoreVerified> {
                                   height: 50,
                                   child: MaterialButton(
                                     color: kPrimaryColor,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  KeystoreUpdate()));
+                                    },
                                     child: Text(
                                       'Go to Dashboard',
                                       style: TextStyle(
